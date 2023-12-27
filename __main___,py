@@ -1,0 +1,13 @@
+# __main__.py
+from .face_extractor import FaceExtractor
+import sys
+
+def main():
+    input_directory = sys.argv[1]
+    output_directory = sys.argv[2]
+
+    face_extractor = FaceExtractor()
+    face_extractor.extract_faces(input_directory, output_directory)
+
+if __name__ == "__main__":
+    main()
